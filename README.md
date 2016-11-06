@@ -10,8 +10,8 @@ Ajaxなどのテストを行うためのコード。AzureのWebAppsにデプロ�
 
     $.ajax({
         type:"GET",
-        url:"http://api-test1106.azurewebsites.net/api/test",    // <-- テスト用URL
-        dataType:"jsonp"
+        url:"http://api-test1106.azurewebsites.net/api/testjson",    // <-- テスト用URL
+        dataType:"json"
     })
     .done(function(data){
         data = JSON.stringify(data);
