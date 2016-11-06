@@ -17,6 +17,11 @@ Ajaxなどのテストを行うためのコード。AzureのWebAppsにデプロ�
         data = JSON.stringify(data);
         alert(data);
     });
+    
+    /*
+    レスポンス
+    [{"Name":"山田　一郎","Age":20},{"Name":"田中　太郎","Age":24}]
+    */
 
 ```
 

@@ -4,15 +4,18 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebApiTest.Models;
 
 namespace WebApiTest.ApiControllers
 {
-    public class apitestController : ApiController
+    public class TestController : ApiController
     {
         // GET: api/apitest
-        public IEnumerable<string> Get()
+        public IEnumerable<Test> Get()
         {
-            return new string[] { "value1", "value2" };
+            var person1 = new Test() { Name = "山田　一郎", Age = 20 };
+            var person2 = new Test() { Name = "田中　太郎", Age = 24 };
+            return new Test[] { person1, person2 };
         }
 
         // GET: api/apitest/5
